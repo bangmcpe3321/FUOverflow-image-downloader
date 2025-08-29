@@ -89,6 +89,7 @@ This tab is for downloading images from `fuoverflow.com`.
 ##### How to Get Your Cookies
 
 **Chrome :**
+
 You can use a browser extension like [Cookie Editor](https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) to easily view and copy the `xf_user` and `xf_session` cookie values.
 
 **Firefox :**
