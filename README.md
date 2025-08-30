@@ -8,7 +8,7 @@ This project provides a two-part utility for downloading images from `fuoverflow
 - **Image Downloader**: A dedicated tab to batch-download images, requiring a start URL and session cookies for authentication.
 - **Gemini AI Processor**: A second tab to analyze a directory of images. It uses the Gemini AI to identify questions in each image and generate answers.
 - **Command-Line Interface**: The AI processing logic can also be run as a standalone CLI script (`AI.py`).
-- **Output Logging**: Both the downloader and processor log their progress in the GUI and save the final AI-generated answers to `all_questions_and_answers.txt`.
+- **Output Logging**: Both the downloader and processor log their progress in the GUI and save the final AI-generated answers to a `.txt` file.
 - **Configuration Management**: Automatically loads and saves the required Google Gemini API key from a `config.txt` file.
 
 ---
@@ -25,6 +25,7 @@ Create a `.gitignore` file in the project's root directory with the following co
 
 # Configuration files
 config.txt
+cookies.json
 
 # Downloaded images
 /downloaded_images/
@@ -42,6 +43,8 @@ config.txt
   - `google-generativeai`
   - `requests`
   - `Pillow`
+  - `selenium`
+  - `webdriver-manager`
 
 ## Installation
 
@@ -64,7 +67,7 @@ config.txt
 
 3.  **Install the required packages:**
     ```bash
-    pip install google-generativeai requests Pillow
+    pip install google-generativeai requests Pillow selenium webdriver-manager
     ```
 
 ## How to Use
@@ -107,7 +110,7 @@ This tab is for analyzing the downloaded images with AI.
 
 1.  **Gemini API Key**: Your key from `config.txt` should be loaded automatically. You can also paste it here directly.
 2.  **Image Directory**: Click **Browse...** and select the `downloaded_images` folder (or any other folder containing images you want to process).
-3.  Click **Start Processing**. The AI will analyze each image, and the results will be appended to `all_questions_and_answers.txt`.
+3.  Click **Start Processing**. The AI will analyze each image, and the results will be appended to a `.txt` file named after the image directory (e.g., `downloaded_images.txt`).
 
 ### Command-Line Method (Processor Only)
 
@@ -129,6 +132,7 @@ You can run the AI analysis directly from the command line.
 - `gui_app.py`: The main application file containing the Tkinter-based GUI.
 - `AI.py`: A standalone script for running the AI image processing from the command line.
 - `gui.bat`: A batch script for easily launching the GUI application on Windows.
-- `config.txt`: Configuration file to store the Google Gemini API key.
+- `.gitignore`: A file that tells Git which files or folders to ignore in a project.
+- `config.txt`: Configuration file to store the Google Gemini API key (auto-generated).
 - `test.py`: A file for testing purposes.
 - `venv/`: Folder containing the Python virtual environment and its dependencies.

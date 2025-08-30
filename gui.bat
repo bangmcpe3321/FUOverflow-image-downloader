@@ -16,7 +16,7 @@ ECHO "Activating virtual environment..."
 CALL ".\venv\Scripts\activate.bat"
 
 ECHO "Installing required packages..."
-pip install requests Pillow google-generativeai
+pip install requests Pillow google-generativeai selenium webdriver-manager
 
 ECHO "--- Setup complete. Launching application... ---"
 python gui_app.py

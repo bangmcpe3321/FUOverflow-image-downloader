@@ -98,6 +98,6 @@ if __name__ == "__main__":
                 output_file.write("\n" + "="*80 + "\n\n")
 
                 if i < total_files - 1:
-                time.sleep(5)
+                time.sleep(8)
 
     print(f"\nBatch processing complete. All results have been appended to '{output_txt_path}'.")
