@@ -132,6 +132,5 @@ You can run the AI analysis directly from the command line.
 - `gui_app.py`: The main application file containing the Tkinter-based GUI.
 - `AI.py`: A standalone script for running the AI image processing from the command line.
 - `gui.bat`: A batch script for easily launching the GUI application on Windows.
-- `.gitignore`: A file that tells Git which files or folders to ignore in a project.
 - `config.txt`: Configuration file to store the Google Gemini API key (auto-generated).
 - `test.py`: A file for testing purposes.
