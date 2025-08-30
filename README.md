@@ -61,7 +61,7 @@ cookies.json
 
 2.  **Set up a Python virtual environment (recommended):**
     ```bash
-    python -m venv ven
+    python -m venv venv
     source venv/bin/activate
     ```
 
