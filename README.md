@@ -135,4 +135,3 @@ You can run the AI analysis directly from the command line.
 - `.gitignore`: A file that tells Git which files or folders to ignore in a project.
 - `config.txt`: Configuration file to store the Google Gemini API key (auto-generated).
 - `test.py`: A file for testing purposes.
-- `venv/`: Folder containing the Python virtual environment and its dependencies.
