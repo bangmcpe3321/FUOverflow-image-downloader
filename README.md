@@ -83,11 +83,11 @@ Launch the application by running the batch file or the Python script:
 
 This tab is for downloading images from `fuoverflow.com`.
 
-1.  **Start URL**: Paste the URL of the first image you want to download. The script will automatically determine the pattern to download subsequent images.
+1.  **Subject Code**: Enter the subject code from the forum URL (e.g., `ITE302c`).
 2.  **Total Files**: Enter the total number of images you want to download.
 3.  **xf_user Cookie**: Enter your `xf_user` cookie value for authentication.
 4.  **xf_session Cookie**: Enter your `xf_session` cookie value.
-5.  Click **Start Download**. The images will be saved to a new folder named `downloaded_images`.
+5.  Click **Fetch URL and Start Download**. The application will first automatically find the correct starting URL and then begin downloading the images into a folder named after the discussion thread's title inside the `downloaded_images` directory.
 
 ##### How to Get Your Cookies
 
